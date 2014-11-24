@@ -2,4 +2,10 @@
 	var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789!@#$%^&*";
 // };
 
-$(document.body).append(characters);
+
+$(".result").append(characters);
+$()
+
+
+Potential way to add classes immediately after appending var = "characters" to a div
+// $(this).after( $("<div></div>").addClass(myClass) );
