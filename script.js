@@ -1,5 +1,5 @@
-// // function (passGen) {
-	var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789!@#$%^&*";
-// // };
+// // // function (passGen) {
+// 	var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789!@#$%^&*";
+// // // };
 
-$(".h1").append(characters);
+document.getElementById('boogie').innerHTML += '<h1>sup</h1>';
