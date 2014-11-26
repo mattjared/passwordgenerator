@@ -1,5 +1,7 @@
-// // // function (passGen) {
-// 	var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789!@#$%^&*";
-// // // };
+// function (passGen) {
+ 	var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789!@#$%^&*";
+// };
 
-document.getElementById('boogie').innerHTML += '<h1>sup</h1>';
+document.write(characters);
+
+// document.getElementById('boogie').innerHTML += '<h1>characters</h1>';
