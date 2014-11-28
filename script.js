@@ -1,7 +1,20 @@
-// function (passGen) {
- 	var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789!@#$%^&*";
-// };
+function passGen() {
+ 	var blankUpChar = "";
+ 	var upChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+ 	var blankLowChar = "";
+ 	var lowChar = "abcdefghijklmnopqrstuvwxyz";
+ 	var blankNumChar = "";
+ 	var numChar = "123456789";
+ 	var blankSpecChar = "";
+ 	var specChar = "!@#$%^&*(){}[]";
+ 	for (var i = 0; i < 4; i++) {
+ 		blankUpChar += upChar.charAt(Math.floor(Math.random()*10));
+ 		blankLowChar += lowChar.charAt(Math.floor(Math.random()*10));
+ 		blankNumChar += numChar.charAt(Math.floor(Math.random()*10));
+ 		blankSpecChar += specChar.charAt(Math.floor(Math.random()*10));
+ 	}
+ 	console.log(blankUpChar + blankLowChar + blankNumChar + blankSpecChar);
+};
 
-document.write(characters);
-
+new passGen;
 // document.getElementById('boogie').innerHTML += '<h1>characters</h1>';
