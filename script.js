@@ -1,4 +1,4 @@
-function passGen() {
+function passGen(){
  	var blankUpChar = "";
  	var upChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
  	var blankLowChar = "";
@@ -13,8 +13,7 @@ function passGen() {
  		blankNumChar += numChar.charAt(Math.floor(Math.random()*10));
  		blankSpecChar += specChar.charAt(Math.floor(Math.random()*10));
  	}
- 	console.log(blankUpChar + blankLowChar + blankNumChar + blankSpecChar);
+ 	document.getElementById("boogie").innerHTML = (blankUpChar + blankLowChar + blankNumChar + blankSpecChar);
 };
 
 new passGen;
-// document.getElementById('boogie').innerHTML += '<h1>characters</h1>';
