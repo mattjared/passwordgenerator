@@ -1,7 +1,44 @@
-.result {
-	font-size: .9rem;
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Muli', sans-serif;
+}
+
+html, body {
+	font-family: 'Muli', sans-serif;
+	background-color: #DFDFDF;
+}
+
+.container {
+	width: 275px;
+	height: 100px;
 }
 
 #boogie {
-	color: pink;
+	width: 85%;
+	display: block;
+	margin: 20px auto;
+	color: #253031;
+	font-size: 1.4rem;
+	text-align: center;
+	background-color: white;
+	padding: 12px 10px;
+	margin-top: 10px;
+	border-radius: 6px;
+	font-weight: 400;
+	overflow: hidden;
+}
+
+.new {
+	background-color: #2978A0;
+	color: white;
+	outline: 0;
+	border: none;
+	width: 70%;
+	margin: 20px auto;
+	display: block;
+	text-align: center;
+	font-size: .7rem;
+	padding: 10px;
+	border-radius: 6px;
 }
