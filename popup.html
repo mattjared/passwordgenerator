@@ -7,13 +7,14 @@
 </head>
 <body>
 	<div class="container">
-		<div  id="boogie">
-		</div>
+		<div  id="boogie"></div>
 		<form>
-			<button onclick="location.reload();" class="new">Generate New Password</button>
+			<input type="range" id="range" min="2" max="9">
+			<button onclick="passGen()" class="new">Generate New Password</button>
 		</form>	
-		<button id="click-to-copy">Click To Copy</button>	
+		<div id="dred"></div>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script type="text/javascript" src="popup.js"></script>
 </body>
 </html>

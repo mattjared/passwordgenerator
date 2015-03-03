@@ -10,8 +10,8 @@ html, body {
 }
 
 .container {
-	width: 275px;
-	height: 100px;
+	width: 675px;
+	height: 150px;
 }
 
 #boogie {
@@ -41,4 +41,10 @@ html, body {
 	font-size: .7rem;
 	padding: 10px;
 	border-radius: 6px;
+}
+
+input[type="range"] {
+	width: 150px;
+	margin: 0 auto;
+	display: block;
 }

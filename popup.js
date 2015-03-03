@@ -1,19 +1,22 @@
-function passGen(){
- 	var blankUpChar = "";
+$('#range').on("change", function() {
+  var x = ($(this).val());	
+  passGen(x);
+});
+
+function passGen(y){
  	var upChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
- 	var blankLowChar = "";
- 	var lowChar = "abcdefghijklmnopqrstuvwxyz";
- 	var blankNumChar = "";
- 	var numChar = "1234567890";
- 	var blankSpecChar = "";
- 	var specChar = "!@#$%^&*(){}[]";
- 	for (var i = 0; i < 4; i++) {
- 		blankUpChar += upChar.charAt(Math.floor(Math.random()*10));
- 		blankLowChar += lowChar.charAt(Math.floor(Math.random()*10));
- 		blankNumChar += numChar.charAt(Math.floor(Math.random()*10));
- 		blankSpecChar += specChar.charAt(Math.floor(Math.random()*10));
+			lowChar = "abcdefghijklmnopqrstuvwxyz";
+			numChar = "1234567890";
+			specChar = "!@#$%^&*(){}[]";
+			blankUpChar = blankLowChar = blankNumChar = blankSpecChar = ""; 
+ 	for (var i = 0; i < y; i++) {
+ 		blankUpChar += upChar.charAt(Math.floor(Math.random() * upChar.length));
+ 		blankLowChar += lowChar.charAt(Math.floor(Math.random() * lowChar.length));
+ 		blankNumChar += numChar.charAt(Math.floor(Math.random() * numChar.length));
+ 		blankSpecChar += specChar.charAt(Math.floor(Math.random() * specChar.length));
  	}
- 	document.getElementById("boogie").innerHTML = (blankUpChar + blankLowChar + blankNumChar + blankSpecChar);
+ 	$("#boogie").text(blankUpChar + blankLowChar + blankNumChar + blankSpecChar);
 };
 
-new passGen;
+passGen(y);
+
