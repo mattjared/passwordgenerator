@@ -18,5 +18,5 @@ function passGen(y){
  	$("#boogie").text(blankUpChar + blankLowChar + blankNumChar + blankSpecChar);
 };
 
-passGen(y);
+passGen(4);
 
